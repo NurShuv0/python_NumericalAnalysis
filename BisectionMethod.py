@@ -1,15 +1,12 @@
 # Perform the bisection method
 results = []
 for i in range(iterations):
-    # compute the midpoint and evaluate f(xn)
-    # your code goes here
+    # computing the midpoint and evaluate f(xn)
     xn = (a + b) / 2.0
     fxn = f(xn)
 
-    # Store the results of this iteration
+    # Stores the results of this iteration
     results.append((i+1, a, b, xn, f(a), f(b), fxn))
-
-    # Check further conditions and update values accordingly
     # your code goes here
     if f(a) * fxn == 0:
       break
